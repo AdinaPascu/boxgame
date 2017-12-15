@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+#startPage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 400px;
+	height: 100vh;
+	z-index: 1;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(60,60,60, 0.5);
+	color: white;
+}
+#startPage p{
+	margin: 20px;
+	font-size: 20px;
+}
+#start {
+	padding: 10px 20px;
+	background-color: rgb(60,60,60);
+	border: 0;
+	color: white;
+}
+#youCan {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(60,60,60, 0.5);
+	color: white;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+}
+#startAgain {
+	padding: 10px 20px;
+	background-color: rgb(60,60,60);
+	border: 0;
+	color: white;
+}
+#youCan p{
+	margin: 20px;
+	font-size: 20px;
+}
+.content {
+	position: relative;
+	margin: auto;
+	background-color: /*rgb(60, 60, 60)*/#666699;
+	height: 100vh;
+	max-width: 400px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+.content > div {
+	display: flex;
+	justify-content: space-around;
+}
+rect:first-child {
+	display: none;
+}
+svg {
+	max-width: 400px;
+}
+.header {
+	display: inline-block;
+}
+img {
+	width: 16px;
+	margin: 10px;
+	vertical-align: middle;
+}
+span {
+	color: white;
+}

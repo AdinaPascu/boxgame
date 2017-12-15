@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portoflio</title>
+	<script type="text/javascript" src="script.js"></script>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="content">
+	<div id="startPage">
+	<p>This is an awesome game meant to test your visual capabilities. Just read the instructions and beat the record!</p>
+	<p>On each level you have to clear the boxes starting with the highest. You can make maximum 5 mistakes per level. Also, as a help you have the box icon which indicates how many boxes with the biggest height are have left.</p>
+	<p>I am sure you will rock this game so...</p>
+	<button id="start">START GAME</button>
+	</div>
+	<div id="youCan">
+		<p>GAME OVER</p>
+		<p>You can do it!</p>
+		<button id="startAgain">TRY AGAIN</button>
+	</div>
+	<div>
+		<div class="header">
+			<img src="img/lives.png">
+			<span id="lives"></span>
+		</div>
+		<div class="header">
+			<img src="img/tries.png">
+			<span id="tries"></span>
+		</div>
+		<div class="header">
+			<img src="img/box.png">
+			<span id="box"></span>
+		</div>
+		<div class="header">
+			<img src="img/score.png">
+			<span id="score"></span>
+		</div>
+		<div class="header">
+			<img src="img/record.png">
+			<span id="record"></span>
+		</div>
+		<div class="header">
+			<img src="img/level.png">
+			<span id="level"></span>
+		</div>
+	</div>
+	<svg id="main" viewBox="-30 -50 330 550" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+		<defs> 
+			<linearGradient id="gradUp" x1="0%" y1="0%" x2="100%" y2="100%" > 
+			<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(120,120,120);stop-opacity:1" />
+			</linearGradient> 
+		</defs>
+		<defs> 
+			<linearGradient id="gradRight" x1="50%" y1="0%" x2="50%" y2="100%" > 
+			<stop offset="0%" style="stop-color:rgb(120,120,120);stop-opacity:1" />
+			<stop offset="52%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+			</linearGradient> 
+		</defs>
+		<defs> 
+			<linearGradient id="gradBottom" x1="0%" y1="50%" x2="100%" y2="50%" > 
+			<stop offset="0%" style="stop-color:rgb(120,120,120);stop-opacity:1" />
+			<stop offset="52%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+			</linearGradient> 
+		</defs>
+		<g id="0">
+			<rect x="0" y="0" width="50" height="50" />
+		</g>
+		<g id="1">
+			<rect x="50" y="0" width="50" height="50" />
+		</g>
+		<g id="2">
+			<rect x="100" y="0" width="50" height="50" />
+		</g>
+		<g id="3">
+			<rect x="150" y="0" width="50" height="50" />
+		</g>
+		<g id="4">
+			<rect x="200" y="0" width="50" height="50" />
+		</g>
+		<g id="5">
+			<rect x="250" y="0" width="50" height="50" />
+		</g>
+		<g id="6">
+			<rect x="0" y="50" width="50" height="50" />
+		</g>
+		<g id="7">
+			<rect x="50" y="50" width="50" height="50" />
+		</g>
+		<g id="8">
+			<rect x="100" y="50" width="50" height="50" />
+		</g>
+		<g id="9">
+			<rect x="150" y="50" width="50" height="50" />
+		</g>
+		<g id="10">
+			<rect x="200" y="50" width="50" height="50" />
+		</g>
+		<g id="11">
+			<rect x="250" y="50" width="50" height="50" />
+		</g>
+		<g id="12">
+			<rect x="0" y="100" width="50" height="50" />
+		</g>
+		<g id="13">
+			<rect x="50" y="100" width="50" height="50" />
+		</g>
+		<g id="14">
+			<rect x="100" y="100" width="50" height="50" />
+		</g>
+		<g id="15">
+			<rect x="150" y="100" width="50" height="50" />
+		</g>
+		<g id="16">
+			<rect x="200" y="100" width="50" height="50" />
+		</g>
+		<g id="17">
+			<rect x="250" y="100" width="50" height="50" />
+		</g>
+		<g id="18">
+			<rect x="0" y="150" width="50" height="50" />
+		</g>
+		<g id="19">
+			<rect x="50" y="150" width="50" height="50" />
+		</g>
+		<g id="20">
+			<rect x="100" y="150" width="50" height="50" />
+		</g>
+		<g id="21">
+			<rect x="150" y="150" width="50" height="50" />
+		</g>
+		<g id="22">
+			<rect x="200" y="150" width="50" height="50" />
+		</g>
+		<g id="23">
+			<rect x="250" y="150" width="50" height="50" />
+		</g>
+		<g id="24">
+			<rect x="0" y="200" width="50" height="50" />
+		</g>
+		<g id="25">
+			<rect x="50" y="200" width="50" height="50" />
+		</g>
+		<g id="26">
+			<rect x="100" y="200" width="50" height="50" />
+		</g>
+		<g id="27">
+			<rect x="150" y="200" width="50" height="50" />
+		</g>
+		<g id="28">
+			<rect x="200" y="200" width="50" height="50" />
+		</g>
+		<g id="29">
+			<rect x="250" y="200" width="50" height="50" />
+		</g>
+		<g id="30">
+			<rect x="0" y="250" width="50" height="50" />
+		</g>
+		<g id="31">
+			<rect x="50" y="250" width="50" height="50" />
+		</g>
+		<g id="32">
+			<rect x="100" y="250" width="50" height="50" />
+		</g>
+		<g id="33">
+			<rect x="150" y="250" width="50" height="50" />
+		</g>
+		<g id="34">
+			<rect x="200" y="250" width="50" height="50" />
+		</g>
+		<g id="35">
+			<rect x="250" y="250" width="50" height="50" />
+		</g>
+		<g id="36">
+			<rect x="0" y="300" width="50" height="50" />
+		</g>
+		<g id="37">
+			<rect x="50" y="300" width="50" height="50" />
+		</g>
+		<g id="38">
+			<rect x="100" y="300" width="50" height="50" />
+		</g>
+		<g id="39">
+			<rect x="150" y="300" width="50" height="50" />
+		</g>
+		<g id="40">
+			<rect x="200" y="300" width="50" height="50" />
+		</g>
+		<g id="41">
+			<rect x="250" y="300" width="50" height="50" />
+		</g>
+		<g id="42">
+			<rect x="0" y="350" width="50" height="50" />
+		</g>
+		<g id="43">
+			<rect x="50" y="350" width="50" height="50" />
+		</g>
+		<g id="44">
+			<rect x="100" y="350" width="50" height="50" />
+		</g>
+		<g id="45">
+			<rect x="150" y="350" width="50" height="50" />
+		</g>
+		<g id="46">
+			<rect x="200" y="350" width="50" height="50" />
+		</g>
+		<g id="47">
+			<rect x="250" y="350" width="50" height="50" />
+		</g>
+		<g id="48">
+			<rect x="0" y="400" width="50" height="50" />
+		</g>
+		<g id="49">
+			<rect x="50" y="400" width="50" height="50" />
+		</g>
+		<g id="50">
+			<rect x="100" y="400" width="50" height="50" />
+		</g>
+		<g id="51">
+			<rect x="150" y="400" width="50" height="50" />
+		</g>
+		<g id="52">
+			<rect x="200" y="400" width="50" height="50" />
+		</g>
+		<g id="53">
+			<rect x="250" y="400" width="50" height="50" />
+		</g>
+		<g id="54">
+			<rect x="0" y="450" width="50" height="50" />
+		</g>
+		<g id="55">
+			<rect x="50" y="450" width="50" height="50" />
+		</g>
+		<g id="56">
+			<rect x="100" y="450" width="50" height="50" />
+		</g>
+		<g id="57">
+			<rect x="150" y="450" width="50" height="50" />
+		</g>
+		<g id="58">
+			<rect x="200" y="450" width="50" height="50" />
+		</g>
+		<g id="59">
+			<rect x="250" y="450" width="50" height="50" />
+		</g>
+	</svg>
+</div>
+</body>
+</html>
