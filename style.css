@@ -7,7 +7,7 @@
 	top: 0;
 	left: 0;
 	max-width: 400px;
-	height: 70vh;
+	height: 100vh;
 	z-index: 1;
 	display: flex;
 	flex-flow: column nowrap;
@@ -37,7 +37,7 @@
 	background-color: rgba(60,60,60, 0.5);
 	color: white;
 	width: 100%;
-	height: 70vh;
+	height: 100vh;
 	z-index: 1;
 }
 #startAgain {
@@ -54,7 +54,7 @@
 	position: relative;
 	margin: auto;
 	background-color: #666699;
-	height: 70vh;
+	height: 100vh;
 	max-width: 400px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -69,7 +69,7 @@ rect:first-child {
 }
 svg {
 	max-width: 400px;
-	max-height: 70vh;
+	max-height: 100vh;
 }
 .header {
 	display: inline-block;
