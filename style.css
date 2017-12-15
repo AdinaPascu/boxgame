@@ -54,7 +54,7 @@
 	position: relative;
 	margin: auto;
 	background-color: #666699;
-	height: 100vh;
+	height: 90vh;
 	max-width: 400px;
 	display: flex;
 	flex-flow: column nowrap;
