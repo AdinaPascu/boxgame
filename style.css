@@ -6,7 +6,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	max-width: 400px;
+	max-width: 350px;
 	height: 100vh;
 	z-index: 1;
 	display: flex;
@@ -54,8 +54,8 @@
 	position: relative;
 	margin: auto;
 	background-color: #666699;
-	height: 90vh;
-	max-width: 400px;
+	height: 100vh;
+	max-width: 350px;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
@@ -68,8 +68,8 @@ rect:first-child {
 	display: none;
 }
 svg {
-	max-width: 400px;
-	max-height: 90vh;
+	max-width: 350px;
+	max-height: 100vh;
 }
 .header {
 	display: inline-block;
