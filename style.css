@@ -53,7 +53,7 @@
 .content {
 	position: relative;
 	margin: auto;
-	background-color: /*rgb(60, 60, 60)*/#666699;
+	background-color: #666699;
 	height: 100vh;
 	max-width: 400px;
 	display: flex;
@@ -69,6 +69,7 @@ rect:first-child {
 }
 svg {
 	max-width: 400px;
+	max-height: 90vh;
 }
 .header {
 	display: inline-block;
